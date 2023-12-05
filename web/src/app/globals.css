@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --pink-500: #f72585;
+  --pink-600: #b01b5f;
+  --blue-500: #4361ee;
+  --purple-500: #7209b7;
+  --purple-600: #4d067c;
+  --white: #ffffff;
+  --neutral-700: #1e1e1e;
+  --neutral-800: #161616;
+  --black: #000000;
+  --red-500: #ef4444;
+
+  /* Spacing */
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+html {
+  font-smooth: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--neutral-700);
+  min-height: 100dvh;
+  min-height: 100vh;
+}

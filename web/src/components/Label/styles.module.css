@@ -1,0 +1,10 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+}

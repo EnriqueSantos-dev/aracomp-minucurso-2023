@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid-auto-flow: row;
+  margin-inline: auto;
+
+  height: 100vh;
+}
+
+.container form {
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 250px;
+  height: 200px;
+}
+
+.image-container img {
+  object-fit: contain;
+  margin-inline: auto;
+}
+
+.container p {
+  color: var(--white);
+  font-weight: 500;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.container button[type="submit"] {
+  margin-top: 1rem;
+}
+
+.container button > svg {
+  margin-right: 0.5rem;
+}
