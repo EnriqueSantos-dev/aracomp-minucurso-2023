@@ -8,10 +8,11 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { z } from "zod";
 
+import ErrorMessage from "@/components/ErrorMessage";
 import { apiInternal } from "@/lib/axios";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { LogIn } from "lucide-react";
 import styles from "./styles.module.css";
-import ErrorMessage from "@/components/ErrorMessage";
 
 const loginSchema = z.object({
   email: z.string().email("Digite um e-mail válido"),
@@ -70,21 +71,7 @@ export function Form() {
       </div>
 
       <Button type="submit" variant="secondary" isLoading={isSubmitting}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
-          <polyline points="10 17 15 12 10 7" />
-          <line x1="15" x2="3" y1="12" y2="12" />
-        </svg>
+        <LogIn size={20} />
         Login
       </Button>
     </form>
